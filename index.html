@@ -1,0 +1,33 @@
+<!-- FILEPATH: /c:/DEV/PW/index.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interactive Webpage</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+        }
+        button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Interactive Webpage</h1>
+    <p>Click the button to change the background color of the page:</p>
+    <button onclick="changeColor()">Change Color</button>
+
+    <script>
+        function changeColor() {
+            var colors = ['#f0f0f0', '#e6e6e6', '#d9d9d9', '#cccccc', '#b3b3b3', '#999999', '#808080', '#666666', '#4d4d4d', '#333333'];
+            var randomColor = colors[Math.floor(Math.random() * colors.length)];
+            document.body.style.backgroundColor = randomColor;
+        }
+    </script>
+</body>
+</html>
